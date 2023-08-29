@@ -8,6 +8,7 @@ To complete the assignment follow the below steps:
 
 ## Prerequisites:
 
+
 	1.Jenkins server installed and running.
 	2.A GitHub repository with the desired branch (e.g., master).
 	3.GitHub credentials (username and personal access token) stored in Jenkins.
@@ -15,6 +16,7 @@ To complete the assignment follow the below steps:
 
 
 ## Step 1: Create a New Pipeline Job
+
     
 	1.Login to Jenkins.
 	2.On the Jenkins dashboard, click "New Item" to create a new job.
@@ -24,6 +26,7 @@ To complete the assignment follow the below steps:
 
 
 ## Step 2: Configure Pipeline Settings
+
 
 	1.In the pipeline configuration, go to the "Pipeline" section.
     
@@ -66,20 +69,20 @@ To complete the assignment follow the below steps:
 
 ```
 	pipeline {
-	agent any
+    agent any
 
-	stages {
-    	stage('Build') {
-        	steps {
-            	echo 'Hello World'
-        	}
-    	}
-    	stage('Git Checkout Branch') {
-        	steps {
-            	checkout scmGit(branches: [[name: '*/master']], browser: github('https://github.com/faseeh-22/25'), extensions: [cloneOption(honorRefspec: true, noTags: true, reference: '', shallow: false), localBranch('master'),  [$class: 'RelativeTargetDirectory', relativeTargetDir: 'git-checkout-pipeline']], userRemoteConfigs: [[credentialsId: 'git-checkout-pipeline', url: 'https://github.com/faseeh-22/25']])
-        	}
-    	}
-	}
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Git Checkout Branch') {
+            steps {
+                checkout scmGit(branches: [[name: '*/master']], browser: github('https://github.com/faseeh-22/25'), extensions: [cloneOption(honorRefspec: true, noTags: true, reference: '', shallow: false), localBranch('master'),  [$class: 'RelativeTargetDirectory', relativeTargetDir: 'git-checkout-pipeline']], userRemoteConfigs: [[credentialsId: 'git-checkout-pipeline', url: 'https://github.com/faseeh-22/25']])
+            }
+        }
+    }
 }
 ```
 
@@ -124,6 +127,7 @@ To complete the assignment follow the below steps:
 
 
 ## Step 4: Save and Run the Pipeline
+
 
 	1.Click "Apply" to save your pipeline configuration.
 	2.In the pipeline's main page, click "Build Now" to run the pipeline.
