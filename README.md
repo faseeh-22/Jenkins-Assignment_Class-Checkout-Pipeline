@@ -62,6 +62,7 @@ To complete the assignment follow the below steps:
 	17.Copy this script in paste in the pipeline.  
     
 	18.In the "Script" area, type the following pipeline script:
+
 ```
 	pipeline {
 	agent any
