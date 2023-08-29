@@ -25,7 +25,8 @@ To complete the assignment follow the below steps:
 
 ## Step 2: Configure Pipeline Settings
 
-	1.In the pipeline configuration, go to the "Pipeline" section.
+	
+ 1.In the pipeline configuration, go to the "Pipeline" section.
     
 	2.Choose "Pipeline script" from the Definition dropdown.
     
