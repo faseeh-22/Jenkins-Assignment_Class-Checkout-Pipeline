@@ -14,7 +14,7 @@ To complete the assignment follow the below steps:
 
 
 
-## Step 1: Create a New Pipeline Job
+Step 1: Create a New Pipeline Job
     
 	1.Login to Jenkins.
 	2.On the Jenkins dashboard, click "New Item" to create a new job.
@@ -25,8 +25,7 @@ To complete the assignment follow the below steps:
 
 ## Step 2: Configure Pipeline Settings
 
-	
- 1.In the pipeline configuration, go to the "Pipeline" section.
+	 1.In the pipeline configuration, go to the "Pipeline" section.
     
 	2.Choose "Pipeline script" from the Definition dropdown.
     
