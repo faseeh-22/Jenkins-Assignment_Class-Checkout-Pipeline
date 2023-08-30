@@ -93,7 +93,7 @@ pipeline {
 
 
 
-## Step 3: Explanation of Pipeline Configuration
+## Explanation of Pipeline Configuration:
 
 	
 **1.checkout:** This step checks out code from a source code management system.
@@ -128,7 +128,7 @@ pipeline {
 
 
 
-## Step 4: Save and Run the Pipeline
+## Step 3: Save and Run the Pipeline
 
 1.Click "Apply" to save your pipeline configuration.
 
