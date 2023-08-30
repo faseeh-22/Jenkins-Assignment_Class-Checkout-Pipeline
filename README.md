@@ -70,7 +70,7 @@ To complete the assignment follow the below steps:
 
 
 ```
-	pipeline {
+pipeline {
     agent any
 
     stages {
